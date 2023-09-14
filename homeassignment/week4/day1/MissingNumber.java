@@ -33,10 +33,15 @@ public class MissingNumber {
 		}
 		System.out.println(misNum);
 		
-		
+		List<Integer> list=new ArrayList<>(misNum);
+		for (int i = 0; i < nums.length; i++) {
+			if (list.get(i)!=i+1) {
+				System.out.println("Missing number is : " + (i+1));
+				break;
+			}
+			
 		}
-		
-		
 	}
+}
 
 
